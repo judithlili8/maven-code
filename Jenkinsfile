@@ -3,19 +3,19 @@ pipeline {
   tools{
     maven 'M2_HOME'
   }
-    stages{
-      stage('clean'){
-        steps{
-         sh 'mvn clean'
-        }
+  stages{
+    stage('clean'){
+      steps{
+        sh 'mvn clean'
       }
-      stage('compile'){
-        steps{
-         sh 'mvn complie'
-        }
+    }
+    stage('compile'){
+      steps{
+        sh 'mvn complie'
       }
-       stage('install'){
-        steps{
+    }
+    stage('install'){
+      steps{
          sh 'mvn install'
         }
       }
