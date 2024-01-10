@@ -11,7 +11,7 @@ pipeline {
     }
     stage('compile'){
       steps{
-        sh 'mvn complie'
+        sh 'mvn compile'
       }
     }
     stage('install'){
